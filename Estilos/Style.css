@@ -1,6 +1,6 @@
 body 
 {
-    background-color: rgba(127, 214, 255, 0.647);
+    background-color: rgb(151, 231, 255);
     
 }
 
@@ -24,23 +24,24 @@ h2
 #links
 {
     
-    border:3px solid;
+    
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    
 
 }
 
 #foto
 {
     width: 300px;
-    height: auto;
+    height: 300px;
     border: solid 3px black;
     border-image: auto;
     background-color: antiquewhite;
     border-radius:50%;
     padding: 10px;
+    
 }
 
 p
@@ -49,4 +50,22 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 20px;
 text-align: center;
 
+}
+header{
+    width: 1108px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+nav{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton{
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    height: 45px;
 }
