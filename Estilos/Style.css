@@ -28,13 +28,11 @@ a
 
 .infoD
     {
-    
     width: 100%;
     height: auto;
     background: #FFEDB9;
     display: flex;
-    justify-content:space-between;
-
+    justify-content: flex-end;
     }
 
 .infoE
@@ -67,7 +65,7 @@ a
     flex-shrink: 0;
     border-radius: 300px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    box-shadow: 0 10px 20px 0 rgb(85, 64, 41)
+    box-shadow: 0 10px 20px 0 rgb(85, 64, 41);
     }
 
 #foto2
@@ -93,7 +91,7 @@ a
     overflow: clip;
     }
 
-    .txt
+.txt
     {
     box-sizing: content-box;
     background-color: #FDD4A1;
@@ -111,7 +109,7 @@ a
     font-style: normal;
     font-weight: 400;
     border-radius: 1em;
-    box-shadow: 0 10px 20px 0 rgb(85, 64, 41)
+    box-shadow: 0 10px 20px 0 rgb(85, 64, 41);
     }
 
 .txt2
@@ -249,7 +247,7 @@ a
     left: 77.4%;
     }
 
-    .botones:hover:nth-last-of-type(4)~.bar3
+.botones:hover:nth-last-of-type(4)~.bar3
     {
     left: 10.8%;
     }
@@ -258,3 +256,80 @@ a
     {
     left: 44%;
     }
+
+@media (max-width: 600px)
+    {
+        .infoD 
+            {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+        #foto1
+            {
+            margin-top: 10%;
+            margin-right: 0%;
+            
+            }
+        
+        .txt
+            {
+            margin-right: 0;
+            }
+            
+        
+
+        .botones
+            {
+            width:22%;
+            }
+    
+        .bar
+            {
+            width: 20%;
+            left: 7%;
+            }
+            
+        .bar2
+            {
+            width: 20%;
+            left: 40%;
+            }
+
+        .bar3
+            {
+            width: 20%;
+            left: 73.3%;
+            }
+
+        .botones:hover:nth-last-of-type(2)~.bar
+            {
+            left: 73.3%;
+            }
+        
+        .botones:hover:nth-last-of-type(3)~.bar
+            {
+            left: 40%;
+            }
+        
+        .botones:hover:nth-last-of-type(4)~.bar2
+            {
+            left: 6.8%;
+            }
+        
+        .botones:hover:nth-last-of-type(2)~.bar2
+            {
+            left: 73.3%;
+            }
+        
+        .botones:hover:nth-last-of-type(4)~.bar3
+            {
+            left: 6.8%;
+            }
+        
+        .botones:hover:nth-last-of-type(3)~.bar3
+            {
+            left: 40%;
+            }
+}
