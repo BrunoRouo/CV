@@ -117,7 +117,7 @@ a
     font-family: Alegreya SC;
     font-size: 150%;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     border-radius: 1em;
     box-shadow: 0 10px 20px 0 rgb(85, 64, 41);
     }
@@ -150,7 +150,6 @@ a
     background-color: #FDD4A1;
     margin-top: 1%;
     display: flex;
-    align-items: center;
     justify-items: center;
     width: 45%;
     height: 10%;
@@ -161,7 +160,8 @@ a
     font-style: normal;
     box-sizing: border-box;
     border-radius: 1em;
-    box-shadow: 0 10px 20px 0 rgb(85, 64, 41)
+    box-shadow: 0 10px 20px 0 rgb(85, 64, 41);
+    flex-direction: column;
     }
 
 .header
@@ -369,3 +369,63 @@ a
             left: 40%;
             }
 }
+
+
+
+.body_trivia {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-family: Alegreya SC;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #FCBB8A;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    margin: 8px 0;
+}
+
+.option:hover
+    {
+    transition: ease 0.3s;
+    transform: scale(1.1);
+    }
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #c55525;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+#triv:hover
+    {
+    color: rgb(0, 106, 255);
+    text-decoration: underline;
+    }
